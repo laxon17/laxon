@@ -76,49 +76,32 @@
 </script>
 
 <style lang="sass" scoped>
-    .section__wrapper
-        width:700px
-        height:650px
-        background-color: #fff
-        border-radius: 0 4px 4px 0 
-        overflow-y: auto
-        .section__title
-            width: 100%
-            border-bottom: 1px solid lightgrey
-            padding: 30px 40px
-            position: relative
-            h2
-                position: relative
-                z-index: 2
-                font-weight: 400
-                .highlight__text 
-                    color: #00B394
-            .background__circle
-                position: absolute
-                z-index: 1
-                left: 15px
-                border-radius: 50%
-                width: 35px
-                height: 35px
-                background: lightgrey
-                background: linear-gradient(90deg, grey 0%, lightgrey 50%,#fff 100%)
-        .content__wrapper
-            color: #585858
-            #boldText
-                font-weight: 700
-            padding: 2em 1em 2em 2.5em
-            line-height: 1.5rem
-            p
-                margin-bottom: 20px
-            .basic__info
-                display: flex
-                align-items: center
-                justify-content: space-around
-        .services__wrapper
-            display: grid
-            grid-template-columns: repeat(2, 50%)
-            margin-bottom: 30px
-        .pricing__wrapper,
-        .facts__wrapper
+    .content__wrapper
+        color: #585858
+        padding: 2em 1em 2em 2.5em
+        line-height: 1.5rem
+        #boldText
+            font-weight: 700
+        p
+            margin-bottom: 20px
+        .basic__info
             display: flex
+            align-items: center
+            justify-content: space-around
+    .services__wrapper
+        display: grid
+        grid-template-columns: repeat(2, 50%)
+        margin-bottom: 30px
+    .pricing__wrapper,
+    .facts__wrapper
+        display: flex
+    @media screen and (max-width: 600px)
+        .basic__info
+            flex-direction: column
+            p
+                width: 100%
+        .services__wrapper
+            grid-template-columns: repeat(1, 100%)
+        .pricing__wrapper
+            flex-direction: column
 </style>

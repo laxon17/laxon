@@ -4,14 +4,14 @@
             <span class="background__circle"></span>
             <h2><span class="highlight__text">My</span> projects</h2>
             <div class="select__filter">
-                <span>Sort by date: </span>
+                <span>Date: </span>
                 <input type="radio" name="sortFilter" id="desc" v-model="this.sortFilter" value="desc">
                 <label for="desc" v-if="this.sortFilter=='asc'">
-                    <i class="material-icons">keyboard_arrow_down</i>
+                    <i class="fa-solid fa-arrow-down"></i>
                 </label>
                 <input type="radio" name="sortFilter" id="asc" v-model="this.sortFilter" value="asc">
                 <label for="asc" v-if="this.sortFilter=='desc'">
-                    <i class="material-icons">keyboard_arrow_up</i>
+                    <i class="fa-solid fa-arrow-up"></i>
                 </label>
             </div>
         </div>
@@ -67,7 +67,13 @@
             input[type="radio"]
                 display: none
             i
+                margin-left: 5px
                 cursor: pointer
-                font-size: 2rem
+                font-size: 1.5rem
                 color: teal
+    @media screen and (max-width: 600px)
+        h2
+            font-size: 1.3rem
+        .projects__wrapper
+            grid-template-columns: repeat(1, 100%)
 </style>

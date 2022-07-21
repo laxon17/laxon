@@ -92,7 +92,11 @@
   ::-webkit-scrollbar-thumb:hover 
     background: #999
   html
+    overflow-x: hidden
+    height: 100%
     body
+      overflow-x: hidden
+      height: 100%
       .fade-enter-from
         transform: scale(0)
         opacity: 0
@@ -112,18 +116,18 @@
         background: rgb(0,103,85)
         background: radial-gradient(circle, rgba(0,103,85,1) 0%, rgba(0,189,156,1) 70%, rgba(0,255,209,1) 100%)
         width: 100%
-        height: 100vh
+        height: 100%
         display: flex
         align-items: center
         justify-content: center
-        .menu__wrapper 
+        .menu__wrapper
           display: flex
           align-items: center
           justify-content: center
           .section__wrapper
             overflow-y: auto
-            width:700px
-            height:650px
+            max-width: 700px
+            height: 650px
             background-color: #fff
             border-radius: 0 4px 4px 0 
             .section__title
@@ -146,4 +150,28 @@
                     height: 35px
                     background: lightgrey
                     background: linear-gradient(90deg, grey 0%, lightgrey 50%,#fff 100%)
+  @media screen and (max-width: 1380px)
+    html
+      height: auto
+      .menu__wrapper
+        flex-direction: column
+        padding: 6rem 0
+        .section__wrapper
+          width: 90%
+  @media screen and (max-width: 600px)
+    html
+      .menu__wrapper
+        position: static
+        .section__wrapper
+          width: 80%
+  @media screen and (max-width: 335px)
+    html
+      .menu__wrapper
+        width: 110%
+        h1
+          font-size: 1.5rem
+        .section__title
+          font-size: .65rem
+          .background__circle
+            top: 25px
 </style>

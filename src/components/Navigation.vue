@@ -21,10 +21,11 @@
     .navigation__wrapper
         position: absolute
         left: -80px
-        top: 30px
+        top: 60px
         display: flex
         flex-direction: column
         align-items: flex-start
+        z-index: 5
         label
             border-bottom: 1px solid lightgrey
             width: 70px
@@ -50,4 +51,18 @@
             &:checked
                 & + label 
                     color: #00997E
+    @media screen and (max-width: 1380px)
+        .navigation__wrapper 
+            left: 0
+            top: -80px
+            width: 100%
+            flex-direction: row
+            justify-content: space-evenly
+            label
+                width: 25%
+                border-right: 1px solid lightgrey   
+                &:first-of-type
+                    border-radius: 0
+                &:last-of-type
+                    border-radius: 0
 </style>

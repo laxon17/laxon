@@ -159,4 +159,13 @@
                 list-style-type: none
         #checkSymbol
             color: teal
+    @media screen and (max-width: 600px)
+        .resume__wrapper
+            flex-direction: column
+            .experience__wrapper,
+            .education__wrapper
+                width: 100%
+                flex-direction: column
+        .skills__wrapper
+            grid-template-columns: repeat(1, 100%)
 </style>

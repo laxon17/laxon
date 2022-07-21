@@ -89,7 +89,10 @@
                         top: 5px
                         border-radius: 50%
                 h4
-
                     font-size: 14px
                     font-weight: 300
+
+    @media screen and (max-width: 335px)
+        .circles__container
+            grid-template-columns: repeat(1, 100%)
 </style>

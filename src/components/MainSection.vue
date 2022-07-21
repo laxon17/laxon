@@ -99,4 +99,19 @@
                     color: rgb(0,138,114)
                 i
                     margin-left: 10px
+    @media screen and (max-width: 1380px)
+        .main__wrapper
+            width: 90%
+            margin-bottom: 30px
+            box-shadow: none
+            .info__container
+                .image__container
+                    img
+                    &::before, &::after
+                        width: 60%
+    @media screen and (max-width: 600px)
+        .main__wrapper
+            width: 80%
+            
+
 </style>
