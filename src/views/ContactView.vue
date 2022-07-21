@@ -12,3 +12,7 @@
         name: 'ContactView'
     }
 </script>
+
+<style lang="sass" scoped>
+    
+</style>

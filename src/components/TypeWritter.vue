@@ -16,7 +16,7 @@
                 jobToDisplay: '',
                 jobIndex: 0,
                 isDeleting: false,
-                jobs: ['Back-end Developer', 'Front-end Developer', 'Freelancer', 'Creator', 'DJ']
+                jobs: ['Back-end Developer', 'Front-end Developer', 'Freelancer', 'Creator']
             }
         },
 

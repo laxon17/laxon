@@ -121,6 +121,7 @@
           align-items: center
           justify-content: center
           .section__wrapper
+            overflow-y: auto
             width:700px
             height:650px
             background-color: #fff
